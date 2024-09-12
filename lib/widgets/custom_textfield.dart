@@ -8,7 +8,7 @@ class CustomTextfield extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-          helperText: 'Title',
+          hintText: 'Title',
           hintStyle: const TextStyle(color: KprimaryColor),
           border: BuildBorder(),
           enabledBorder: BuildBorder(),
@@ -18,7 +18,7 @@ class CustomTextfield extends StatelessWidget {
 
   OutlineInputBorder BuildBorder([Color]) {
     return OutlineInputBorder(
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(8),
         borderSide: BorderSide(color: Color ?? Colors.white));
   }
 }

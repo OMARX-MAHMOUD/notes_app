@@ -5,19 +5,8 @@ import 'package:notes_app/cubit/notes_cubit/notes_cubit_cubit.dart';
 import 'package:notes_app/widgets/custom_textfield.dart';
 import 'package:notes_app/widgets/customappbar.dart';
 
-class EditnoteviewBody extends StatefulWidget {
+class EditnoteviewBody extends StatelessWidget {
   const EditnoteviewBody({super.key});
-
-  @override
-  State<EditnoteviewBody> createState() => _EditnoteviewBodyState();
-}
-
-class _EditnoteviewBodyState extends State<EditnoteviewBody> {
-  @override
-  void initState() {
-    BlocProvider.of<NotesCubit>(context).ReadAllNotes();
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {

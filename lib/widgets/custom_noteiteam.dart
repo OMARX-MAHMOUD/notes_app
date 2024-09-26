@@ -40,7 +40,9 @@ class NotesIteam extends StatelessWidget {
                 ),
               ),
               trailing: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    notes.delete();
+                  },
                   icon: const Padding(
                     padding: EdgeInsets.only(left: 10, bottom: 15),
                     child: Icon(

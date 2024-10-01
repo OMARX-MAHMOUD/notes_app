@@ -5,8 +5,4 @@ sealed class NotesCubitState {}
 
 final class NotesCubitInitial extends NotesCubitState {}
 
-class NotesCubitSuccess extends NotesCubitState {
-  final List<NoteModel> notes;
-
-  NotesCubitSuccess({required this.notes});
-}
+class NotesCubitSuccess extends NotesCubitState {}
